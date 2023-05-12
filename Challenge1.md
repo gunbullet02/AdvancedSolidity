@@ -1,1 +1,5 @@
+Go through the test file called Lock.ts within the /test folder and find out the uses of ethers in this file. Share your observations with your Metacrafters peers in our Discord channel.
 
+My observations
+
+So first what i noticed is the fixture keyword which when i googled for turns out to be setting up a state or environment for reusing across multiple tests. The first function which is named deployOneYearLockFixture it specified the one year time frame and alloted the gas currency which is gwei for resource allocation. In the deployment function there is just conditional statements that handles different various cases like if it is in the right owner or if it's unclock at the right time just to name a few. Next is the withdrawals function where there are error handling statements for different scenarios and an increast time method using the HardHat library as well as a method for transferring to an another account. Next is the events and transfers function where there is a withdraw function along with an changing ether balance if transation was succesfully made.
